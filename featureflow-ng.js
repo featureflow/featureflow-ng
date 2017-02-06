@@ -6,7 +6,7 @@
         .provider('featureflow', featureflowProvider);
 
     /**
-     * This will be turned into an ng-featureflow module on github
+     * Very simple angular 1 wrapper for featureflow javascript SDK
      *
      * 1. Include via npm or bower
      * 2. Import the module
