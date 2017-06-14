@@ -1,0 +1,20 @@
+machine:
+    node:
+        version: 6.7.0
+dependencies:
+  pre:
+  - npm install
+  cache_directories:
+  - ~/nvm
+  override:
+  - sudo pip install awscli
+test:
+  override:
+    - npm run build
+deployment:
+  production:
+    branch: master
+    commands:
+    - chmod +x ./deploy_prod_s3.sh
+    - ./deploy_prod_s3.sh
+
