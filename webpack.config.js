@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const packageJSON = require('./package.json');
+const path = require('path');
 
 const version = packageJSON.version;
 
