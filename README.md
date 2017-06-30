@@ -44,8 +44,16 @@ import FeatureflowProvider from 'featureflow-ng';
 ```
 
 ##### Bower
-Include the following script in HTML file. This will expose the global variable `FeatureflowProvider`
+Install both the `featureflow-client` and `featureflow-ng` components.
+```bash
+$ bower install featureflow-client
+$ bower install featureflow-ng
+```
+ Include the following script in HTML file. This will expose the global variable `FeatureflowProvider`.
+ You must also include the bower `featureflow-client` script.
+
 ```html
+<script crossorigin="anonymous" src="bower_components/featureflow-client/dist/featureflow.min.js"></script>
 <script crossorigin="anonymous" src="bower_components/featureflow-ng/dist/featureflow-ng.min.js"></script>
 ```
 Note: It is recommended to use build tools to manage your bower dependencies.
@@ -55,9 +63,36 @@ Please see the [bower website](https://bower.io/#use-packages) for more details.
 Include the following script in HTML file. This will expose the global variable `Featureflow`
 ```html
 <script crossorigin="anonymous" src="https://features.featureflow.io/featureflow.js"></script>
+<script crossorigin="anonymous" src="https://features.featureflow.io/featureflow-ng.js"></script>
 ```
 
-This plugin will expose the entire featureflow client interface. Please see the [featureflow-javascript-sdk](https://github.com/featureflow/featureflow-javascript-sdk) for further details.
+This plugin will expose the entire featureflow client interface. 
+
+#### Getting Started
+
+Add the ng-featureflow to your `app.module` and initialize it in your config.
+
+```javascript
+var FF_API_KEY = '<js-featureflow-key>';
+
+angular.module('sampleApp', ['ng-featureflow'])
+.config(['featureflowProvider', function(featureflowProvider) {
+		featureflowProvider.init(FF_API_KEY, {});
+}]);
+```
+Access the featureflow client instance using the following code in your controller.
+
+```javascript
+angular.module('sampleApp')
+.controller('ExampleController', function(featureflow) {
+		//user featureflow like you would the normal client
+		if (featureflow.evaluate('my-key').isOn()){
+		  //do something
+		}
+});
+```
+
+Please see the [featureflow-javascript-sdk](https://github.com/featureflow/featureflow-javascript-sdk) for further details about how to use the featureflow instance.
 
 ## Roadmap
 - [x] Write documentation
