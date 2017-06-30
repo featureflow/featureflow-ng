@@ -25,6 +25,11 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+      alias: {
+          angular: path.resolve(path.join(__dirname, "node_modules", "angular"))
+      }
+  },
   plugins: [
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version)
