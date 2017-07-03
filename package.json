@@ -1,6 +1,6 @@
 {
   "name": "featureflow-ng",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "Featureflow Angular Provider ",
   "main": "dist/featureflow-ng.umd.js",
   "author": "Featureflow <featureflow@featureflow.io>",

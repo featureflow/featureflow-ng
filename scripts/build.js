@@ -14,9 +14,10 @@ function exec(command) {
 
 exec('npm run build-lib');
 exec('npm run build-min');
+exec('npm run build-bower');
 
 console.log(
   '\ngzipped, the UMD build is ' + prettyBytes(
-    gzipSize.sync(readFileSync('dist/featureflow-ng.min.js'))
+    gzipSize.sync(readFileSync('dist/featureflow-ng.umd.min.js'))
   )
 );

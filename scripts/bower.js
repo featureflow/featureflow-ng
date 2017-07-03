@@ -20,7 +20,7 @@ exec('npm run build-bower');
 exec('rm -rf '+bowerTempPath);
 exec('git clone '+bowerRepo+' '+bowerTempPath);
 exec('cp dist/* '+bowerTempPath);
-exec('rm '+bowerTempPath+'*.umd.js');
+exec('rm '+bowerTempPath);
 exec('cd '+bowerTempPath+' ' +
   '&& git add . ' +
   '&& git commit -m \"v'+packageJson.version+'" ' +
