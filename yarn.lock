@@ -1004,12 +1004,13 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
-featureflow-client@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/featureflow-client/-/featureflow-client-0.6.1.tgz#4f930bcd5cb4ec363776a6285dcc32134d77abe9"
+featureflow-client@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/featureflow-client/-/featureflow-client-1.3.3.tgz#bc944c9c765ab5b20bec7aa7ccdf2bd210890697"
+  integrity sha512-ujHO02HPNDbwbyz3dmE7t3SbGTaPUfYeFHT0fXwmLZDpCLBszL6J7kTn4ZYX/iHoKdtec2rHYPCGZ2AN4N6gVA==
   dependencies:
-    js-cookie "^2.1.3"
-    tiny-emitter "^1.1.0"
+    js-cookie "^2.1.4"
+    tiny-emitter "^1.2.0"
 
 filename-regex@^2.0.0:
   version "2.0.1"
@@ -1380,9 +1381,10 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-js-cookie@^2.1.3:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.1.4.tgz#da4ec503866f149d164cf25f579ef31015025d8d"
+js-cookie@^2.1.4:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+  integrity sha1-Gywnmm7s44ChIWi5JIUmWzWx7/s=
 
 js-tokens@^3.0.0:
   version "3.0.2"
@@ -2197,9 +2199,10 @@ timers-browserify@^2.0.2:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-emitter@^1.1.0:
+tiny-emitter@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-1.2.0.tgz#6dc845052cb08ebefc1874723b58f24a648c3b6f"
+  integrity sha1-bchFBSywjr78GHRyO1jySmSMO28=
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
