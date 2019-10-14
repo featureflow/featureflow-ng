@@ -18,13 +18,13 @@ angular
 function featureflowProvider(){
 
     this.apiKey = "";
-    this.context = {};
-    this.init = function (apiKey, context){
+    this.user = {};
+    this.init = function (apiKey, user){
         this.apiKey = apiKey;
-        this.context = context;
+        this.user = user;
     } ;
     this.$get = function() {
-        var featureflow = Featureflow.init(this.apiKey, this.context);
+        var featureflow = Featureflow.init(this.apiKey, this.user);
         return featureflow;
     };
 }

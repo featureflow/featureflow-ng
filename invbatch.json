@@ -1,7 +1,7 @@
 {
   "Paths": {
-    "Quantity": 2,
-    "Items": ["/featureflow-ng.js", "/featureflow-ng.min.js"]
+    "Quantity": 4,
+    "Items": ["/featureflow-ng.js", "/featureflow-ng.min.js", "/v1.3.3/featureflow-ng.js", "/v1.3.3/featureflow-ng.min.js"]
   },
-  "CallerReference": "ff-deployment-2017-01-01"
+  "CallerReference": "ff-deployment-2017-01-02"
 }
